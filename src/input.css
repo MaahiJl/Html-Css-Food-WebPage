@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: poppinsLight;
+        src: url("/fonts/Poppins-Light.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: poppinsRegular;
+        src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: poppinsMedium;
+        src: url("/fonts/Poppins-Medium.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: poppinsSemibold;
+        src: url("/fonts/Poppins-SemiBold.ttf") format("truetype");
+    }
+}
+
+@layer components {
+    .btn {
+        @apply rounded-full border py-[0.25rem] px-3;
+    }
+    .center {
+        @apply flex justify-center items-center;
+    }
+    .yellowline {
+        @apply bg-[#FFFDE6] rounded-lg w-56 h-20
+    }
+    .redtitle {
+        @apply text-red font-poppins-semibold text-[2.5rem] leading-[4.5rem] lg:text-4xl lg:leading-[4.15rem]
+    }
+}

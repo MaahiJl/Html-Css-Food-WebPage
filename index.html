@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/app.css" />
+    <link rel="stylesheet" href="./styles/custom.css" />
+  </head>
+  <body class="font-poppins-regular bg-white">
+    <!-- Header Nav Bar -->
+    <header
+      class="container  px-[20rem] 2xl:px-[10rem] xl:px-[7rem] md:px-[3rem] sm:px-[2rem] mt-5 lg:h-[72rem]"
+    >
+      <nav class="flex justify-between items-center px-8">
+        <div
+          class="flex justify-between items-center gap-24 xl:gap-12 lg:gap-10"
+        >
+          <div class="inline-block relative w-[3.3rem] h-[3rem] bg-red">
+            <a href="#">
+              <img
+                class="absolute top-[7px]"
+                src="/images/Logo.png"
+                alt="Logo"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <ul
+            class="flex justify-center items-center gap-14 text-lg xl:gap-8 lg:hidden font-poppins-medium"
+          >
+            <a href="#" class="text-red">HomePage</a>
+            <a
+              href="#"
+              class="text-gerylighter hover:text-greyLight transition-colors"
+              >Scale off</a
+            >
+            <a
+              href="#"
+              class="text-gerylighter hover:text-greyLight transition-colors"
+              >News</a
+            >
+            <a
+              href="#"
+              class="text-gerylighter hover:text-greyLight transition-colors"
+              >Menu</a
+            >
+            <a
+              href="#"
+              class="text-gerylighter hover:text-greyLight transition-colors"
+              >Contacts</a
+            >
+          </ul>
+        </div>
+        <div class="center gap-2">
+          <button
+            class="btn w-[6rem] h-[2.5rem] border-red bg-transparent text-red hover:bg-[rgb(201, 0, 0, 0.5)] transition-colors sm:w-20"
+          >
+            Sign in
+          </button>
+          <button
+            class="btn w-[6rem] h-[2.5rem] border-red bg-red text-white hover:bg-[rgb(201, 0, 0, 0.2)] transition-colors sm:w-20"
+          >
+            Login
+          </button>
+        </div>
+
+        <!-- Mobile Menue -->
+        <div class="hidden lg:block -mr-[0.5rem]">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 35 35"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.91675 20.4166C2.91675 19.6112 3.56967 18.9583 4.37508 18.9583H30.6251C31.4305 18.9583 32.0834 19.6112 32.0834 20.4166C32.0834 21.2221 31.4305 21.875 30.6251 21.875H4.37508C3.56967 21.875 2.91675 21.2221 2.91675 20.4166Z"
+              fill="#504F4F"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.375 14.5833C4.375 9.75082 8.29251 5.83331 13.125 5.83331H21.875C26.7075 5.83331 30.625 9.75082 30.625 14.5833C30.625 15.3887 29.9721 16.0416 29.1667 16.0416H5.83333C5.02792 16.0416 4.375 15.3887 4.375 14.5833ZM13.125 11.6666C13.125 12.4721 12.4721 13.125 11.6667 13.125C10.8613 13.125 10.2083 12.4721 10.2083 11.6666C10.2083 10.8612 10.8613 10.2083 11.6667 10.2083C12.4721 10.2083 13.125 10.8612 13.125 11.6666ZM17.5 13.125C18.3054 13.125 18.9583 12.4721 18.9583 11.6666C18.9583 10.8612 18.3054 10.2083 17.5 10.2083C16.6946 10.2083 16.0417 10.8612 16.0417 11.6666C16.0417 12.4721 16.6946 13.125 17.5 13.125ZM24.7917 11.6666C24.7917 12.4721 24.1388 13.125 23.3333 13.125C22.5279 13.125 21.875 12.4721 21.875 11.6666C21.875 10.8612 22.5279 10.2083 23.3333 10.2083C24.1388 10.2083 24.7917 10.8612 24.7917 11.6666Z"
+              fill="#504F4F"
+            />
+            <path
+              d="M30.625 26.25C30.625 27.8608 29.3192 29.1666 27.7083 29.1666H7.29167C5.68083 29.1666 4.375 27.8608 4.375 26.25C4.375 25.4446 5.02792 24.7916 5.83333 24.7916H29.1667C29.9721 24.7916 30.625 25.4446 30.625 26.25Z"
+              fill="#504F4F"
+            />
+          </svg>
+        </div>
+      </nav>
+
+      <!-- Header -->
+        <div class="grid grid-cols-2 relative h-[55rem] lg:flex lg:flex-col md:flex-col">
+            <div class="main-header__left self-center w-[85%] xl:self-start xl:pt-40 lg:pt-24 lg:w-[100%] lg:text-center">
+                <div class="flex flex-col w-[100%] xl:pr-[1rem] lg:px-20 md:px-8 sm:px-2">
+                    <h1
+                    class="text-red text-left font-poppins-semibold text-5xl mb-5 leading-[4.5rem] 2xl:text-4xl 2xl:leading-[4rem] lg:text-5xl lg:text-center lg:leading-[4.15rem]"
+                    style="text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25)"
+                    >
+                    Order your favourite food
+                    </h1>
+                    <p
+                    class="mb-20 text-left text-greyLight font-poppins-regular text-lg leading-[2rem] lg:text-lg lg:mb-[3rem] lg:text-center lg:font-poppins-light"
+                    style="text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4)"
+                    >
+                    Hamburger has many flavors, have you tried Cheese Beef Hamburger?
+                    </p>
+                    <p class="text-greyLight font-poppins-light text-lg mb-4 lg:hidden">
+                    Total Order
+                    <b class="text-3xl text-greyDark font-poppins-regular lg:text-2xl">: $2.5</b>
+                    </p>
+                </div>
+                <div class="center justify-between w-[100%] xl:w-[115%] lg:w-[100%] lg:hidden">
+                    <div
+                        class="btn relative center justify-between w-40 h-[3.5rem] px-4 lg:w-36 lg:h-[3rem]"
+                        style="
+                            box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                            -webkit-box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                            -moz-box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                        "
+                        >
+                        <button class="center content-start w-8 h-8 rounded-full  hover:bg-slate-200 active:bg-slate-300 transition-colors duration-250">
+                            <span class="plus1 lg:w-[1rem] lg:h-[0.10rem]"></span>
+                            <span class="plus2 lg:w-[1rem] lg:h-[0.10rem]"></span>
+                        </button>
+                        <span class="line1 lg:w-[1.2rem] left-[45px]"></span>
+                        <span class="number text-2xl text-yellow lg:text-xl">3</span>
+                        <span class="line2 lg:w-[1.2rem] right-[45px]"></span>
+                        <button class="center content-end w-8 h-8 rounded-full  hover:bg-slate-200 active:bg-slate-300 transition-colors duration-250">
+                            <span class="minus lg:w-[1rem] lg:h-[0.10rem]"></span>
+                        </button>
+                    </div>
+                    <button
+                    class="center gap-3 text-greyDark text-2xl font-poppins-medium btn w-56 h-[4.5rem] bg-yellow hover:bg-yellowHover transition-colors duration-300 lg:w-40 lg:h-[3.5rem] lg:text-lg lg:gap-1"
+                    style="
+                        box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                        -webkit-box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                        -moz-box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                    "
+                    >
+                        <img src="/images/Shopping Basket.png" alt="" loading="lazy" />
+                        Order Now
+                    </button>
+                </div>
+            </div>
+            <div class="main-header__right relative self-center xl:self-start xl:pt-24 lg:w-[100%] lg:pt-0 lg:mb-20">
+                <span
+                    class="bubble center flex-col justify-between absolute left-[-8rem] top-0 btn w-[12rem] h-[6rem] bg-[#F1F1F1] rounded-full rounded-br-none py-4 z-20 2xl:w-[10rem] 2xl:h-[5rem] 2xl:px-[1rem] 2xl:-left-28 xl:top-24 lg:w-36 lg:bottom-4 lg:-left-8 md:top-[19rem] sm:left-0 sm:w-32 sm:h-16 sm:py-[10px]"
+                >
+                    <div class="center gap-2">
+                        <img src="/images/Alarm.png" alt="" class=""/>
+                        <p class="text-2xl font-poppins-regular text-greyDark 2xl:text-xl sm:text-base">
+                            Delivery
+                        </p>
+                    </div>
+                    <p class="text-greyLight text-xl 2xl:text-base text-nowrap">30 mins</p>
+                </span>
+                <img
+                    class="w-[100%] z-10 lg:px-24 md:px-10 sm:px-4"
+                    src="/images/Group 15.png"
+                    alt=""
+                />
+            </div>
+
+            <!-- lg Header Change -->
+            <div class="lg-header hidden lg:block lg:px-36 md:px-20 sm:px-12">
+                <p class="text-greyLight font-poppins-light text-lg mb-4 md:mb-[0.2rem] sm:text-sm">
+                    Total Order
+                    <b class="text-3xl text-greyDark font-poppins-regular lg:text-2xl sm:text-xl">: $2.5</b>
+                </p>
+                <div class="center justify-between w-[70%] 2xl:w-[100%] xl:w-[115%] lg:w-[100%]">
+                    <div
+                        class="btn relative center justify-between w-40 h-[3.5rem] px-4 lg:w-36 lg:h-[3rem]"
+                        style="
+                            box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                            -webkit-box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                            -moz-box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                        "
+                        >
+                        <button class="center content-start w-8 h-8 rounded-full  hover:bg-slate-200 active:bg-slate-300 transition-colors duration-250">
+                            <span class="plus1 lg:w-[1rem] lg:h-[0.10rem]"></span>
+                            <span class="plus2 lg:w-[1rem] lg:h-[0.10rem]"></span>
+                        </button>
+                        <span class="line1 lg:w-[1.2rem] left-[45px]"></span>
+                        <span class="number text-2xl text-yellow lg:text-xl">3</span>
+                        <span class="line2 lg:w-[1.2rem] right-[45px]"></span>
+                        <button class="center content-end w-8 h-8 rounded-full  hover:bg-slate-200 active:bg-slate-300 transition-colors duration-250">
+                            <span class="minus lg:w-[1rem] lg:h-[0.10rem]"></span>
+                        </button>
+                    </div>
+                    <button
+                    class="center gap-3 text-greyDark text-2xl font-poppins-medium btn w-56 h-[4.5rem] bg-yellow hover:bg-yellowHover transition-colors duration-300 lg:w-40 lg:h-[3.5rem] lg:text-lg lg:gap-1 sm:text-base"
+                    style="
+                        box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                        -webkit-box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                        -moz-box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                    "
+                    >
+                        <img src="/images/Shopping Basket.png" alt="" class="text-nowrap" />
+                        Order Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative">
+        <!-- Food List -->
+        <div 
+            class="container px-[20rem] 2xl:px-[10rem] xl:px-[7rem] md:px-[3rem] sm:px-[2rem]">
+            <div>    
+                <div 
+                    class="menu-title">
+                    <h2 
+                        class="redtitle w-max relative">
+                        MENU
+                        <span 
+                            class="inline-block bg-[#FFF6A3] w-[100%] h-3 absolute bottom-4 left-0 -z-10">
+                        </span>
+                    </h2>
+                </div>
+                <div
+                    class="food-list center justify-start gap-6 mt-8 overflow-x-auto">
+                    <button 
+                        class="btn center py-3 px-6 gap-2 bg-yellow hover:bg-yellowHover transition-colors text-nowrap lg:px-8">
+                    <img src="/images/icon/Badge Discount.svg" alt="">
+                    <p class="text-greyDark font-poppins-regular">Best seller</p>
+                    </button>
+                    <button 
+                        class="btn center py-3 px-6 gap-2 bg-btnGrey hover:bg-[#979797] transition-colors text-nowrap lg:px-8">
+                    <img src="/images/icon/Burger.svg" alt="">
+                    <p class="text-greyDark font-poppins-regular">Hambureger</p>
+                    </button>
+                    <button 
+                        class="btn center py-3 px-6 gap-2 bg-btnGrey hover:bg-[#979797] transition-colors text-nowrap lg:px-8">
+                    <img src="/images/icon/Cup 01.svg" alt="">
+                    <p class="text-greyDark font-poppins-regular">Drink</p>
+                    </button>
+                    <button 
+                        class="btn center py-3 px-6 gap-2 bg-btnGrey hover:bg-[#979797] transition-colors text-nowrap lg:px-8">
+                    <img src="/images/icon/Ice Cream.svg" alt="">
+                    <p class="text-greyDark font-poppins-regular">Dessert</p>
+                    </button>
+                    <button 
+                        class="btn center py-3 px-6 gap-2 bg-btnGrey hover:bg-[#979797] transition-colors text-nowrap lg:px-8">
+                    <img src="/images/icon/Serving Plate.svg" alt="">
+                    <p class="text-greyDark font-poppins-regular">Fried chicken</p>
+                    </button>
+                </div>
+                <div 
+                    class="food-menu grid gap-10 justify-center mt-8 sm:px-6">
+                    <div 
+                        class="food-box h-[350px] p-4 border rounded-xl">
+                        <div class="center flex-col relative mb-1">
+                            <img src="/images/hamburger.png" alt="hamburger">
+                            <div class="absolute bottom-2 yellowline w-[100%] h-20 rounded-lg -z-10"></div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3 class="font-poppins-semibold text-greyDark text-xl text-left mb-1">Cheese Beef Hamburger</h3>
+                                <p class="font-poppins-regular text-greyLight text-sm text-left mb-1">fried chicken balls, french fries</p>
+                                <div class="center gap-1 justify-start mb-5">
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+                                    <span class="font-poppins-regular text-greyLight text-sm">(5)</span>
+                                </div>
+                                <div class="center justify-between">
+                                    <span class="font-poppins-semibold text-greyDark text-xl text-left">5.35$</span>
+                                    <button class="inline-block w-11 h-11 bg-red rounded-lg hover:bg-[#8f0000] transition-colors">
+                                        <svg class="m-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.9963 12C5.344 12 4.86633 12.6144 5.02717 13.2466L6.42488 18.7398C6.76319 20.0693 7.96032 21 9.33225 21H14.6652C16.0383 21 17.2362 20.0678 17.5734 18.7367L18.9644 13.2456C19.1245 12.6137 18.6469 12 17.9951 12H5.9963ZM9 16C9 15.4477 9.44771 15 10 15C10.5523 15 11 15.4477 11 16V17C11 17.5523 10.5523 18 10 18C9.44771 18 9 17.5523 9 17V16ZM13 16C13 15.4477 13.4477 15 14 15C14.5523 15 15 15.4477 15 16V17C15 17.5523 14.5523 18 14 18C13.4477 18 13 17.5523 13 17V16Z" fill="#FFEAE6"/>
+                                            <path d="M3 9C3 8.44772 3.44772 8 4 8H20C20.5523 8 21 8.44772 21 9C21 9.55228 20.5523 10 20 10H4C3.44772 10 3 9.55228 3 9Z" fill="#FFEAE6"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7071 4.70711C11.0976 4.31658 11.0976 3.68342 10.7071 3.29289C10.3166 2.90237 9.68342 2.90237 9.29289 3.29289L8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711C8.68342 6.09763 9.31658 6.09763 9.70711 5.70711L10.7071 4.70711ZM13.2929 4.70711C12.9024 4.31658 12.9024 3.68342 13.2929 3.29289C13.6834 2.90237 14.3166 2.90237 14.7071 3.29289L15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711C15.3166 6.09763 14.6834 6.09763 14.2929 5.70711L13.2929 4.70711Z" fill="#FFEAE6"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div 
+                        class="food-box h-[350px] p-4 border rounded-xl">
+                        <div class="center flex-col relative mb-1">
+                            <img src="/images/icon/Badge Discount.png" alt="" class="w-10 h-10 absolute top-0 left-0">
+                            <img src="/images/combo funny.png" alt="combo funny" loading="lazy">
+                            <div class="absolute bottom-2 yellowline w-[100%] h-20 rounded-lg -z-10"></div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3 class="font-poppins-semibold text-greyDark text-xl text-left mb-1">Combo funny</h3>
+                                <p class="font-poppins-regular text-greyLight text-sm text-left mb-1">fried chicken balls, french fries</p>
+                                <div class="center gap-1 justify-start mb-5">
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+                                    <span class="font-poppins-regular text-greyLight text-sm">(5)</span>
+                                </div>
+                                <div class="center justify-between">
+                                    <span class="font-poppins-semibold text-greyDark text-xl text-left">10.3$</span>
+                                    <button class="inline-block w-11 h-11 bg-red rounded-lg hover:bg-[#8f0000] transition-colors">
+                                        <svg class="m-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.9963 12C5.344 12 4.86633 12.6144 5.02717 13.2466L6.42488 18.7398C6.76319 20.0693 7.96032 21 9.33225 21H14.6652C16.0383 21 17.2362 20.0678 17.5734 18.7367L18.9644 13.2456C19.1245 12.6137 18.6469 12 17.9951 12H5.9963ZM9 16C9 15.4477 9.44771 15 10 15C10.5523 15 11 15.4477 11 16V17C11 17.5523 10.5523 18 10 18C9.44771 18 9 17.5523 9 17V16ZM13 16C13 15.4477 13.4477 15 14 15C14.5523 15 15 15.4477 15 16V17C15 17.5523 14.5523 18 14 18C13.4477 18 13 17.5523 13 17V16Z" fill="#FFEAE6"/>
+                                            <path d="M3 9C3 8.44772 3.44772 8 4 8H20C20.5523 8 21 8.44772 21 9C21 9.55228 20.5523 10 20 10H4C3.44772 10 3 9.55228 3 9Z" fill="#FFEAE6"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7071 4.70711C11.0976 4.31658 11.0976 3.68342 10.7071 3.29289C10.3166 2.90237 9.68342 2.90237 9.29289 3.29289L8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711C8.68342 6.09763 9.31658 6.09763 9.70711 5.70711L10.7071 4.70711ZM13.2929 4.70711C12.9024 4.31658 12.9024 3.68342 13.2929 3.29289C13.6834 2.90237 14.3166 2.90237 14.7071 3.29289L15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711C15.3166 6.09763 14.6834 6.09763 14.2929 5.70711L13.2929 4.70711Z" fill="#FFEAE6"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div 
+                        class="food-box h-[350px] p-4 border rounded-xl">
+                        <div class="center flex-col relative mb-1">
+                            <img src="/images/chicken spicy sauce.png" alt="‌Chicken with Spicy Sauce" loading="lazy">
+                            <div class="absolute bottom-2 yellowline w-[100%] h-20 rounded-lg -z-10"></div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3 class="font-poppins-semibold text-greyDark text-xl text-left mb-1">‌Chicken with Spicy Sauce</h3>
+                                <p class="font-poppins-regular text-greyLight text-sm text-left mb-1">chili garlic sauce, black pepper sauce</p>
+                                <div class="center gap-1 justify-start mb-5">
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+                                    <span class="font-poppins-regular text-greyLight text-sm">(5)</span>
+                                </div>
+                                <div class="center justify-between">
+                                    <span class="font-poppins-semibold text-greyDark text-xl text-left">7.2$</span>
+                                    <button class="inline-block w-11 h-11 bg-red rounded-lg hover:bg-[#8f0000] transition-colors">
+                                        <svg class="m-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.9963 12C5.344 12 4.86633 12.6144 5.02717 13.2466L6.42488 18.7398C6.76319 20.0693 7.96032 21 9.33225 21H14.6652C16.0383 21 17.2362 20.0678 17.5734 18.7367L18.9644 13.2456C19.1245 12.6137 18.6469 12 17.9951 12H5.9963ZM9 16C9 15.4477 9.44771 15 10 15C10.5523 15 11 15.4477 11 16V17C11 17.5523 10.5523 18 10 18C9.44771 18 9 17.5523 9 17V16ZM13 16C13 15.4477 13.4477 15 14 15C14.5523 15 15 15.4477 15 16V17C15 17.5523 14.5523 18 14 18C13.4477 18 13 17.5523 13 17V16Z" fill="#FFEAE6"/>
+                                            <path d="M3 9C3 8.44772 3.44772 8 4 8H20C20.5523 8 21 8.44772 21 9C21 9.55228 20.5523 10 20 10H4C3.44772 10 3 9.55228 3 9Z" fill="#FFEAE6"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7071 4.70711C11.0976 4.31658 11.0976 3.68342 10.7071 3.29289C10.3166 2.90237 9.68342 2.90237 9.29289 3.29289L8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711C8.68342 6.09763 9.31658 6.09763 9.70711 5.70711L10.7071 4.70711ZM13.2929 4.70711C12.9024 4.31658 12.9024 3.68342 13.2929 3.29289C13.6834 2.90237 14.3166 2.90237 14.7071 3.29289L15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711C15.3166 6.09763 14.6834 6.09763 14.2929 5.70711L13.2929 4.70711Z" fill="#FFEAE6"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div 
+                        class="food-box h-[350px] p-4 border rounded-xl">
+                        <div class="center flex-col relative mb-1">
+                            <img src="/images/icon/Badge Discount.png" alt="" class="w-10 h-10 absolute top-0 left-0">
+                            <img src="/images/salad.png" alt="Salad mixed vinegar" loading="lazy">
+                            <div class="absolute bottom-2 yellowline w-[100%] h-20 rounded-lg -z-10"></div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3 class="font-poppins-semibold text-greyDark text-xl text-left mb-1">Salad mixed vinegar</h3>
+                                <p class="font-poppins-regular text-greyLight text-sm text-left mb-1">Salad, vinegar, tomato</p>
+                                <div class="center gap-1 justify-start mb-5">
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+                                    <span class="font-poppins-regular text-greyLight text-sm">(5)</span>
+                                </div>
+                                <div class="center justify-between">
+                                    <span class="font-poppins-semibold text-greyDark text-xl text-left">5.4$</span>
+                                    <button class="inline-block w-11 h-11 bg-red rounded-lg hover:bg-[#8f0000] transition-colors">
+                                        <svg class="m-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.9963 12C5.344 12 4.86633 12.6144 5.02717 13.2466L6.42488 18.7398C6.76319 20.0693 7.96032 21 9.33225 21H14.6652C16.0383 21 17.2362 20.0678 17.5734 18.7367L18.9644 13.2456C19.1245 12.6137 18.6469 12 17.9951 12H5.9963ZM9 16C9 15.4477 9.44771 15 10 15C10.5523 15 11 15.4477 11 16V17C11 17.5523 10.5523 18 10 18C9.44771 18 9 17.5523 9 17V16ZM13 16C13 15.4477 13.4477 15 14 15C14.5523 15 15 15.4477 15 16V17C15 17.5523 14.5523 18 14 18C13.4477 18 13 17.5523 13 17V16Z" fill="#FFEAE6"/>
+                                            <path d="M3 9C3 8.44772 3.44772 8 4 8H20C20.5523 8 21 8.44772 21 9C21 9.55228 20.5523 10 20 10H4C3.44772 10 3 9.55228 3 9Z" fill="#FFEAE6"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7071 4.70711C11.0976 4.31658 11.0976 3.68342 10.7071 3.29289C10.3166 2.90237 9.68342 2.90237 9.29289 3.29289L8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711C8.68342 6.09763 9.31658 6.09763 9.70711 5.70711L10.7071 4.70711ZM13.2929 4.70711C12.9024 4.31658 12.9024 3.68342 13.2929 3.29289C13.6834 2.90237 14.3166 2.90237 14.7071 3.29289L15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711C15.3166 6.09763 14.6834 6.09763 14.2929 5.70711L13.2929 4.70711Z" fill="#FFEAE6"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div 
+                        class="food-box h-[350px] p-4 border rounded-xl">
+                        <div class="center flex-col relative mb-1">
+                            <img src="/images/icon/Badge Discount.png" alt="" class="w-10 h-10 absolute top-0 left-0">
+                            <img src="/images/burger_with_fried_chicken_2021_08_29_03_54_46_utc 1.png" alt=" chickenburger" loading="lazy">
+                            <div class="absolute bottom-2 yellowline w-[100%] h-20 rounded-lg -z-10"></div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3 class="font-poppins-semibold text-greyDark text-xl text-left mb-1">Chicken burger</h3>
+                                <p class="font-poppins-regular text-greyLight text-sm text-left mb-1">fried chicken</p>
+                                <div class="center gap-1 justify-start mb-5">
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+                                    <span class="font-poppins-regular text-greyLight text-sm">(5)</span>
+                                </div>
+                                <div class="center justify-between">
+                                    <span class="font-poppins-semibold text-greyDark text-xl text-left">5.39$</span>
+                                    <button class="inline-block w-11 h-11 bg-red rounded-lg hover:bg-[#8f0000] transition-colors">
+                                        <svg class="m-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.9963 12C5.344 12 4.86633 12.6144 5.02717 13.2466L6.42488 18.7398C6.76319 20.0693 7.96032 21 9.33225 21H14.6652C16.0383 21 17.2362 20.0678 17.5734 18.7367L18.9644 13.2456C19.1245 12.6137 18.6469 12 17.9951 12H5.9963ZM9 16C9 15.4477 9.44771 15 10 15C10.5523 15 11 15.4477 11 16V17C11 17.5523 10.5523 18 10 18C9.44771 18 9 17.5523 9 17V16ZM13 16C13 15.4477 13.4477 15 14 15C14.5523 15 15 15.4477 15 16V17C15 17.5523 14.5523 18 14 18C13.4477 18 13 17.5523 13 17V16Z" fill="#FFEAE6"/>
+                                            <path d="M3 9C3 8.44772 3.44772 8 4 8H20C20.5523 8 21 8.44772 21 9C21 9.55228 20.5523 10 20 10H4C3.44772 10 3 9.55228 3 9Z" fill="#FFEAE6"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7071 4.70711C11.0976 4.31658 11.0976 3.68342 10.7071 3.29289C10.3166 2.90237 9.68342 2.90237 9.29289 3.29289L8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711C8.68342 6.09763 9.31658 6.09763 9.70711 5.70711L10.7071 4.70711ZM13.2929 4.70711C12.9024 4.31658 12.9024 3.68342 13.2929 3.29289C13.6834 2.90237 14.3166 2.90237 14.7071 3.29289L15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711C15.3166 6.09763 14.6834 6.09763 14.2929 5.70711L13.2929 4.70711Z" fill="#FFEAE6"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div 
+                        class="food-box h-[350px] p-4 border rounded-xl">
+                        <div class="center flex-col relative mb-1">
+                            <img src="/images/hamburger.png" alt="hamburger" loading="lazy">
+                            <div class="absolute bottom-2 yellowline w-[100%] h-20 rounded-lg -z-10"></div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3 class="font-poppins-semibold text-greyDark text-xl text-left mb-1">Lipton</h3>
+                                <p class="font-poppins-regular text-greyLight text-sm text-left mb-1">Drink a cool, fabulous, hand made, summer drink</p>
+                                <div class="center gap-1 justify-start mb-5">
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#FFC300"/>
+                                    </svg>
+                                    <span class="font-poppins-regular text-greyLight text-sm">(5)</span>
+                                </div>
+                                <div class="center justify-between">
+                                    <span class="font-poppins-semibold text-greyDark text-xl text-left">2.8$</span>
+                                    <button class="inline-block w-11 h-11 bg-red rounded-lg hover:bg-[#8f0000] transition-colors">
+                                        <svg class="m-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.9963 12C5.344 12 4.86633 12.6144 5.02717 13.2466L6.42488 18.7398C6.76319 20.0693 7.96032 21 9.33225 21H14.6652C16.0383 21 17.2362 20.0678 17.5734 18.7367L18.9644 13.2456C19.1245 12.6137 18.6469 12 17.9951 12H5.9963ZM9 16C9 15.4477 9.44771 15 10 15C10.5523 15 11 15.4477 11 16V17C11 17.5523 10.5523 18 10 18C9.44771 18 9 17.5523 9 17V16ZM13 16C13 15.4477 13.4477 15 14 15C14.5523 15 15 15.4477 15 16V17C15 17.5523 14.5523 18 14 18C13.4477 18 13 17.5523 13 17V16Z" fill="#FFEAE6"/>
+                                            <path d="M3 9C3 8.44772 3.44772 8 4 8H20C20.5523 8 21 8.44772 21 9C21 9.55228 20.5523 10 20 10H4C3.44772 10 3 9.55228 3 9Z" fill="#FFEAE6"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7071 4.70711C11.0976 4.31658 11.0976 3.68342 10.7071 3.29289C10.3166 2.90237 9.68342 2.90237 9.29289 3.29289L8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711C8.68342 6.09763 9.31658 6.09763 9.70711 5.70711L10.7071 4.70711ZM13.2929 4.70711C12.9024 4.31658 12.9024 3.68342 13.2929 3.29289C13.6834 2.90237 14.3166 2.90237 14.7071 3.29289L15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711C15.3166 6.09763 14.6834 6.09763 14.2929 5.70711L13.2929 4.70711Z" fill="#FFEAE6"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="block text-center text-greyLight underline mt-8">See all</span>
+            </div>
+            <!-- sale offs -->
+            <div 
+                class="sale-off mt-24">
+                <div 
+                    class="sale-off__title">
+                    <h2 
+                        class="redtitle w-max relative mx-auto">
+                        SALE OFF
+                        <span 
+                            class="inline-block bg-[#FFF6A3] w-[100%] h-3 absolute bottom-4 left-0 -z-10">
+                        </span>
+                    </h2>
+                </div>
+                <div class="sale-offs grid gap-x-8 gap-y-8 justify-center mt-8">
+                    <div class="sale-off-box relative flex max-w-[22rem] h-[18rem] py-6 pl-6 border border-[#eaeae9] bg-btnGrey rounded-xl overflow-hidden hover:scale-105 transition-all duration-500 delay-75 hover:bg-red group">
+                        <div class="w-[65%] flex justify-between flex-col z-10">
+                            <div>
+                                <div class="center mb-1 w-[155%] gap-2">
+                                    <p class="text-greyDark w-fit text-nowrap group-hover:text-white transition-all duration-500">Fast food</p>
+                                    <span class="inline-block bg-[#7d7c7c59] w-[100%] h-[0.06rem] group-hover:bg-[#ffffff81] transition-all duration-500"></span>
+                                </div>
+                                <div>
+                                    <h2 class="redtitle font-poppins-semibold text-3xl mb-2 group-hover:text-yellow transition-all duration-500">
+                                        Combo funny
+                                    </h2>
+                                    <p class="font-poppins-regular text-greyDark text-sm w-[70%] mb-3 group-hover:text-white transition-all duration-500">
+                                        buy 1 funny combo get 1 coca cola
+                                    </p>
+                                    <div class="center justify-start gap-2">
+                                        <del class="text-greyDark font-poppins-semibold text-sm group-hover:text-white transition-all duration-500">10.3$</del>
+                                        <p class="font-poppins-semibold text-red text-lg group-hover:text-yellow transition-all duration-500">9.3$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="center text-nowrap gap-1 text-base font-poppins-regular btn w-36 h-10 bg-[#504f4f] text-white hover:bg-white hover:text-[#504f4f] transition-colors duration-300"
+                                style="
+                                    box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                                    -webkit-box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                                    -moz-box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                                "
+                            >
+                                <img src="/images/icon/basket white.svg" alt="" class="group-hover:hidden">
+                                Order Now
+                            </button>
+                        </div>
+                        <div class="absolute bottom-[55px] right-[-50px] z-0">
+                            <img src="/images/combo funny.png" alt="" class="transform scale-110">
+                        </div>
+                    </div>
+                    <div class="sale-off-box relative flex max-w-[22rem] h-[18rem] py-6 pl-6 border border-[#eaeae9] rounded-xl overflow-hidden hover:scale-105 transition-all duration-500 delay-75 bg-red">
+                        <div class="w-[65%] flex justify-between flex-col z-10">
+                            <div>
+                                <div class="center mb-1 w-[155%] gap-2">
+                                    <p class=" w-fit text-nowrap text-white">Fast food</p>
+                                    <span class="inline-block w-[100%] h-[0.06rem] bg-[#ffffff81]"></span>
+                                </div>
+                                <div>
+                                    <h2 class="redtitle font-poppins-semibold text-3xl mb-2 text-yellow">
+                                        Salad mixed vinegar
+                                    </h2>
+                                    <p class="font-poppins-regular  text-sm w-[70%] mb-3 text-white invisible">
+                                    </p>
+                                    <div class="center justify-start gap-2">
+                                        <del class="font-poppins-semibold text-sm text-white ">10.3$</del>
+                                        <p class="font-poppins-semibold text-lg text-yellow">9.3$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="center text-nowrap gap-1 text-base font-poppins-regular btn w-36 h-10 bg-white text-[#504f4f] transition-colors duration-300 group"
+                                style="
+                                    box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                                    -webkit-box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                                    -moz-box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                                "
+                            >
+                                <img src="/images/Shopping Basket.png" alt="" class="group-hover:hidden">
+                                Order Now
+                            </button>
+                        </div>
+                        <div class="absolute bottom-[55px] right-[-50px] z-0">
+                            <img src="/images/salad.png" alt="" class="transform scale-110">
+                        </div>
+                    </div>
+                    <div class="sale-off-box relative flex max-w-[22rem] h-[18rem] py-6 pl-6 border border-[#eaeae9] bg-btnGrey rounded-xl overflow-hidden hover:scale-105 transition-all duration-500 delay-75 hover:bg-red group">
+                        <div class="w-[65%] flex justify-between flex-col z-10">
+                            <div>
+                                <div class="center mb-1 w-[155%] gap-2">
+                                    <p class="text-greyDark w-fit text-nowrap group-hover:text-white transition-all duration-500">Fast food</p>
+                                    <span class="inline-block bg-[#7d7c7c59] w-[100%] h-[0.06rem] group-hover:bg-[#ffffff81] transition-all duration-500"></span>
+                                </div>
+                                <div class="">
+                                    <h2 class="redtitle font-poppins-semibold text-3xl mb-2 group-hover:text-yellow transition-all duration-500">
+                                        CHICKEN BUGGER
+                                    </h2>
+                                    <p class="font-poppins-regular text-greyDark text-sm w-[70%] mb-3 group-hover:text-white transition-all duration-500">
+                                        fried chicken
+                                    </p>
+                                    <div class="center justify-start gap-2">
+                                        <del class="text-greyDark font-poppins-semibold text-sm group-hover:text-white transition-all duration-500">10.3$</del>
+                                        <p class="font-poppins-semibold text-red text-lg group-hover:text-yellow transition-all duration-500">9.3$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="center text-nowrap gap-1 text-base font-poppins-regular btn w-36 h-10 bg-[#504f4f] text-white hover:bg-white hover:text-[#504f4f] transition-colors duration-300"
+                                style="
+                                    box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                                    -webkit-box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                                    -moz-box-shadow: -11px 10px 19px -7px rgba(0, 0, 0, 0.15);
+                                "
+                            >
+                                <img src="/images/icon/Burger.svg" alt="" class="group-hover:hidden">
+                                Order Now
+                            </button>
+                        </div>
+                        <div class="absolute bottom-[55px] right-[-50px] z-0">
+                            <img src="/images/combo funny.png" alt="" class="transform scale-110">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- exclusive offers -->
+            <div class="mt-28">
+                <div class="exclusive-offers center gap-16 py-16 xl:flex-col-reverse xl:gap-0 xl:py-0 xl:px-0 xl:justify-start">
+                    <div class="w-[35%] xl:w-[100%]">
+                        <img src="/images/phone.png" alt="" loading="lazy" class="transform absolute bottom-[-7px] lg:hidden">
+                        <img src="/images/phone.png" alt="" loading="lazy" class="transform hidden lg:block">
+                    </div>
+                    <div class="flex flex-col justify-between w-[65%] xl:w-[100%] border-2">
+                        <div class="h-52">
+                            <p class="text-[#7d7c7c] font-poppins-medium text-lg mb-2">Exclusive offers and more</p>
+                            <h3 class="redtitle text-4xl mb-3">MCDONALD’S MOBILE APP</h3>
+                            <p class="font-poppins-regular text-greyLight text-base mb-8">As a global No. 1 fast food brand, McDonald's wishes to bring customers not only delicious and hygienic food of international standards but also the best service experience.</p>
+                        </div>
+                        <div class="center justify-start gap-6">
+                            <button class="btn bg-[#504f4f] center gap-3 text-white py-[0.6rem] px-6">
+                                <img src="/images/icon/applestore.svg" alt="">
+                                <div class="text-left">
+                                    <p class="text-sm font-poppins-light">Download on the</p>
+                                    <p class="font-poppins-medium text-base">App Store</p>
+                                </div>
+                            </button>
+                            <button class="btn bg-[#504f4f] center gap-3 text-white py-[0.6rem] px-6">
+                                <img src="/images/icon/pstore.svg" alt="">
+                                <div class="text-left">
+                                    <p class="text-sm font-poppins-light">Download on the</p>
+                                    <p class="font-poppins-medium text-base"></p>Google Play</p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gray-box absolute lg:hidden left-0 top-[] bg-btnGrey w-[90%] h-96 rounded-tr-full rounded-br-full -z-10 xl:w-[95%]" >
+                    </div>
+                    <div class="gray-box hidden lg:block absolute left-0 top-[] bg-btnGrey w-[80%] h-[50rem] rounded-tr-full rounded-br-full -z-10" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

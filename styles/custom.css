@@ -87,4 +87,8 @@
         gap: 4rem;
     }
 }
+.sale-off-box{
+    justify-self: center;
+    width: 22rem;
+}
 
